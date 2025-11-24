@@ -1,0 +1,107 @@
+/* ===========================================================
+   ABOUT PAGE — about.css
+   Dark Theme + Glassmorphism + Neon Glow
+=========================================================== */
+
+.about-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 28px;
+
+  background: rgba(31, 29, 29, 0.02);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 16px 38px rgba(0,0,0,0.55);
+
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Header */
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Neon Logo */
+.about-logo {
+  width: 80px;
+  filter: drop-shadow(0 0 12px #00ffc6)
+          drop-shadow(0 0 22px #00d9b3);
+  animation: logoFloat 3s ease-in-out infinite;
+}
+
+/* Title */
+.page-heading {
+  font-size: 2.3rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #22c1a9, #00e3c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-subtitle {
+  color: #9aa6ad;
+  font-size: 1.1rem;
+}
+
+/* Sections */
+.about-section {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 22px;
+
+  box-shadow: 0 12px 26px rgba(0,0,0,0.55);
+  backdrop-filter: blur(8px);
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #22c1a9;
+  margin-bottom: 12px;
+}
+
+.about-section p,
+.about-section ul li {
+  color: #d0d8dc;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  padding-left: 20px;
+}
+
+/* Back Button */
+.back-btn {
+  width: 120px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes logoFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+/* GLOBAL DARK THEME BACKGROUND */
+body {
+  background: radial-gradient(900px 350px at 10% 20%, rgba(34,193,169,0.10), transparent 60%),
+              linear-gradient(180deg, #0b0f12, #10171d 50%, #0f1418);
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #e6eef2;
+}

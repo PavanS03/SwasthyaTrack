@@ -1,0 +1,90 @@
+/* ================================
+   REGISTER PAGE — register.css
+===================================*/
+
+.center-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0e1113, #12171c, #0b0f12);
+}
+
+.card {
+  width: 420px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 34px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 26px rgba(0,0,0,0.4);
+  animation: scaleIn 0.5s ease;
+}
+
+.title {
+  color: #22c1a9;
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+  color: #e9f1f3;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.input:focus {
+  border-color: #22c1a9;
+  box-shadow: 0 0 8px rgba(34,193,169,0.3);
+}
+
+.btn-primary {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #22c1a9, #00e3c0);
+  color: #041d18;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(34,193,169,0.4);
+}
+
+.small-text {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+  color: #b3bfc5;
+}
+
+.small-text a {
+  color: #22c1a9;
+  text-decoration: none;
+}
+
+.small-text a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes scaleIn {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

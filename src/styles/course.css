@@ -1,0 +1,195 @@
+/* ============================================================
+   COURSE PAGE — course.css
+   Full Dark Theme + Glassmorphism + Neon Glow Effects
+===============================================================*/
+
+/* Page wrapper */
+.course-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+
+  background: radial-gradient(
+              900px 350px at 10% 20%,
+              rgba(34, 193, 169, 0.10),
+              transparent 60%)
+            ,
+            linear-gradient(180deg, #0b0f12, #10171d 50%, #0f1418);
+
+  border-radius: 16px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Page Heading */
+.page-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 32px;
+  font-weight: 900;
+
+  background: linear-gradient(90deg, #22c1a9, #00e3c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===============================
+   COURSE GRID
+================================*/
+.course-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* ===============================
+   COURSE CARD
+================================*/
+.course-card-big {
+  display: flex;
+  gap: 22px;
+  padding: 22px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+
+  animation: cardFade 0.7s ease both;
+  transition: 0.25s ease;
+}
+
+.course-card-big:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 44px rgba(0,0,0,0.75);
+  border-color: rgba(34, 193, 169, 0.45);
+}
+
+/* ===============================
+   LEFT IMAGE
+================================*/
+.course-big-left {
+  flex: 0 0 260px;
+}
+
+.course-big-left img {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.55);
+}
+
+.no-image {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  color: #9aa6ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+/* ===============================
+   RIGHT DETAILS
+================================*/
+.course-big-right {
+  flex: 1;
+  color: #e6eef2;
+}
+
+.course-big-right h2 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #22c1a9;
+}
+
+.course-big-right p {
+  margin: 6px 0;
+  color: #9aa6ad;
+  font-size: 1rem;
+}
+
+/* ===============================
+   ENROLL BUTTON
+================================*/
+.enroll-btn {
+  margin-top: 16px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #22c1a9, #00e3c0);
+  color: #041f1f;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.enroll-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(34,193,169,0.40);
+}
+
+/* ============================================================
+   BACK BUTTON STYLING (NEON + GLASS)
+===============================================================*/
+.btn-back,
+.btn.ghost {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 20px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #e6eef2;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.25s ease;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.45);
+}
+
+/* Hover effect — Neon Glow */
+.btn-back:hover,
+.btn.ghost:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(34,193,169,0.45);
+  box-shadow: 0 16px 34px rgba(0,255,200,0.40);
+  background: rgba(34,193,169,0.10);
+}
+
+/* ============================================================
+   ANIMATIONS
+===============================================================*/
+@keyframes cardFade {
+  0% { opacity: 0; transform: translateY(18px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(14px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   RESPONSIVE
+===============================================================*/
+@media (max-width: 850px) {
+  .course-card-big {
+    flex-direction: column;
+  }
+  .course-big-left img {
+    height: 240px;
+  }
+}
+body {
+  background: radial-gradient(900px 350px at 10% 20%, rgba(34,193,169,0.10), transparent 60%),
+              linear-gradient(180deg, #0b0f12, #10171d 50%, #0f1418);
+}

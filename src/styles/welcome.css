@@ -1,0 +1,127 @@
+/* ============================================================
+   SWASTHYTRACKER — WELCOME PAGE (Dark Neon Theme)
+   ============================================================ */
+
+/* Fullscreen background */
+.welcome-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(900px 350px at 10% 20%, rgba(34,193,169,0.15), transparent 60%),
+              linear-gradient(180deg, #04070b, #080c11 50%, #0a1016);
+  padding: 20px;
+}
+
+/* Center wrapper */
+.welcome-wrapper {
+  text-align: center;
+  animation: fadeUp 1s ease-out forwards;
+}
+
+/* Logo Image */
+.welcome-logo {
+  width: 180px;
+  margin: 0 auto 18px auto;
+  filter: drop-shadow(0 0 18px rgba(0,255,210,0.5));
+  animation: glowPulse 2.5s infinite ease-in-out;
+}
+
+/* Welcome Card */
+.welcome-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 40px 32px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.65);
+  backdrop-filter: blur(14px);
+
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+/* Title */
+.welcome-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #22c1a9;
+  margin-bottom: 12px;
+  text-shadow: 0 0 12px rgba(0,255,210,0.35);
+}
+
+/* Description */
+.welcome-text {
+  color: #c2d0d4;
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+/* Buttons Container */
+.welcome-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Login Button */
+.btn-primary {
+  display: block;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+
+  background: linear-gradient(90deg, #22c1a9, #00e8c2);
+  color: #042422;
+
+  box-shadow: 0 8px 20px rgba(0,255,210,0.25);
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0,255,210,0.35);
+}
+
+/* Create Account Button */
+.btn-ghost {
+  display: block;
+  text-align: center;
+  padding: 12px 16px;
+  font-weight: 700;
+  text-decoration: none;
+
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: #d9e6ea;
+
+  transition: 0.25s ease;
+}
+
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateY(-4px);
+}
+
+/* =============================================
+   Animations
+   ============================================= */
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(22px); }
+  60% { opacity: 1; transform: translateY(-4px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowPulse {
+  0%   { filter: drop-shadow(0 0 14px rgba(0,255,210,0.4)); }
+  50%  { filter: drop-shadow(0 0 30px rgba(0,255,210,0.75)); }
+  100% { filter: drop-shadow(0 0 14px rgba(0,255,210,0.4)); }
+}

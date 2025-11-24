@@ -1,0 +1,134 @@
+/* ============================================================
+   ADMIN USER LIST PAGE — adminuser.css
+   Dark + Neon + Glassmorphism
+============================================================ */
+
+.admin-users-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background: rgba(255,255,255,0.02);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Header */
+.admin-users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-users-header h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0;
+
+  background: linear-gradient(90deg, #22c1a9, #00e3c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Search + Count */
+.admin-users-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.search-input {
+  width: 350px;
+}
+
+.users-count {
+  color: #9aa6ad;
+  font-size: 0.95rem;
+}
+
+/* Table */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.02);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.users-table th {
+  text-align: left;
+  padding: 14px;
+  color: #22c1a9;
+  background: rgba(255,255,255,0.04);
+  font-size: 0.95rem;
+}
+
+.users-table td {
+  padding: 14px;
+  color: #e6eef2;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Empty State */
+.empty {
+  text-align: center;
+  padding: 25px;
+  color: #9aa6ad;
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  transition: 0.2s;
+}
+
+.btn.small {
+  padding: 6px 12px;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, #22c1a9, #00e3c0);
+  color: #041f1f;
+}
+
+.btn.primary-outline {
+  background: transparent;
+  border: 1px solid #22c1a9;
+  color: #22c1a9;
+}
+
+.btn.ghost {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #e6eef2;
+}
+
+.btn.danger {
+  background: #d83e3e;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

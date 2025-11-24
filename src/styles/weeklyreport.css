@@ -1,0 +1,178 @@
+/* ===========================================================
+   WEEKLY REPORT PAGE — weeklyreport.css
+   Dark Theme + Neon + Glassmorphism
+===========================================================*/
+
+.weekly-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+
+  background: radial-gradient(900px 350px at 10% 20%, rgba(34,193,169,0.10), transparent 60%),
+              linear-gradient(180deg, #0b0f12, #10171d 50%, #0f1418);
+
+  border-radius: 16px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Heading */
+.page-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: 900;
+  background: linear-gradient(90deg, #22c1a9, #00e3c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Top Button Row */
+.top-buttons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  padding: 12px 18px;
+  background: linear-gradient(90deg, #22c1a9, #00e3c0);
+  color: #041f1f;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 8px 22px rgba(0,255,200,0.35);
+  transition: 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0,255,200,0.45);
+}
+
+/* Disabled Button */
+.btn-disabled {
+  padding: 12px 18px;
+  background: rgba(255,255,255,0.06);
+  color: #777;
+  border-radius: 10px;
+  cursor: not-allowed;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Back button */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 160px;
+}
+
+/* Weekly Table */
+.weekly-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.55);
+}
+
+.weekly-table th {
+  padding: 14px;
+  background: rgba(255,255,255,0.05);
+  color: #9aa6ad;
+  font-weight: 700;
+  text-align: left;
+}
+
+.weekly-table td {
+  padding: 14px;
+  color: #e6eef2;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Select Button */
+.btn-select {
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  color: #e6eef2;
+  border: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-select:hover {
+  background: rgba(34,193,169,0.15);
+  border-color: #22c1a9;
+}
+
+.btn-select.selected {
+  background: linear-gradient(90deg, #22c1a9, #00e3c0);
+  color: #041f1f;
+  font-weight: 700;
+}
+
+/* Submit Weekly Plan */
+.submit-block {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-submit {
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #22c1a9, #00e3c0);
+  color: #041f1f;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 12px 32px rgba(0,255,200,0.45);
+  transition: 0.25s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-4px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+/* src/styles/weekly.css */
+@import "./common-theme.css";
+
+.weekly-page {
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 18px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.02);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.users-table th, .users-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  color: #d6e6e4;
+}
+
+.users-table thead th {
+  background: rgba(255,255,255,0.02);
+  color: #9aa6ad;
+  font-weight: 700;
+}
+
+.btn.primary { background: linear-gradient(90deg,#22c1a9,#00e3c0); color: #041f1f; }
+.btn.primary-outline { border: 1px solid rgba(34,193,169,0.2); color: #22c1a9; background: transparent; }
+
+.table-actions { display:flex; gap:12px; justify-content:center; margin-top:16px; }

@@ -1,0 +1,14 @@
+@import "./common-theme.css";
+
+.month-page { max-width: 980px; margin: 28px auto; padding: 20px; }
+.month-list { display:flex; flex-direction:column; gap:14px; margin-top:16px; }
+
+.month-card {
+  display:flex; align-items:center; justify-content:space-between;
+  background: rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.05);
+  padding: 16px; border-radius: 12px;
+}
+.month-title { font-weight:700; color:#22c1a9; }
+.month-total { color:#d6e6e4; margin-top:6px; }
+.month-card-actions { display:flex; gap:10px; align-items:center; }
