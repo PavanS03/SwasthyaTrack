@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/about.css";
-import logo from "../assets/home-logo.png"; // ensure file exists
+import logo from "../assets/home-logo.png";
 
 export default function About() {
   return (
     <div className="about-page page-card">
 
-      {/* Header Section */}
+      
       <div className="about-header">
         <img src={logo} alt="logo" className="about-logo" />
 
@@ -21,7 +21,7 @@ export default function About() {
         ← Back
       </Link>
 
-      {/* Minimal Company Intro */}
+      
       <section className="about-section">
         <h2 className="section-title">Who We Are</h2>
         <p>
@@ -30,7 +30,7 @@ export default function About() {
         </p>
       </section>
 
-      {/* Key Highlights */}
+      
       <section className="about-section">
         <h2 className="section-title">What We Offer</h2>
         <ul>
@@ -41,7 +41,7 @@ export default function About() {
         </ul>
       </section>
 
-      {/* Mission Section */}
+      
       <section className="about-section">
         <h2 className="section-title">Our Mission</h2>
         <p>

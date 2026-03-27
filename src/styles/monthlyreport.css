@@ -1,9 +1,4 @@
-/* ============================================================
-   MONTHLY REPORT PAGE — monthlyreport.css
-   Dark Theme + Glassmorphism + Neon Glow UI
-============================================================ */
 
-/* Page Wrapper */
 .month-page {
   max-width: 850px;
   margin: 40px auto;
@@ -18,7 +13,7 @@
   animation: fadeIn 0.6s ease-out;
 }
 
-/* Heading */
+
 .page-heading {
   text-align: center;
   font-size: 2.2rem;
@@ -31,7 +26,7 @@
   margin-bottom: 18px;
 }
 
-/* Back Button */
+
 .btn.ghost {
   display: inline-block;
   padding: 10px 18px;
@@ -50,7 +45,7 @@
   box-shadow: 0 12px 28px rgba(0,255,200,0.25);
 }
 
-/* No Data Box */
+
 .empty {
   background: rgba(255,255,255,0.03);
   padding: 26px;
@@ -68,7 +63,7 @@
   color: #22c1a9;
 }
 
-/* Main Box */
+
 .month-box {
   margin-top: 20px;
   padding: 24px;
@@ -89,7 +84,7 @@
   color: #22c1a9;
 }
 
-/* Chart Container */
+
 .chart-container {
   margin-top: 10px;
   padding: 18px;
@@ -106,13 +101,13 @@ canvas {
   max-height: 350px;
 }
 
-/* Fade Animation */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   .month-page {
     padding: 16px;
@@ -121,7 +116,7 @@ canvas {
     font-size: 1.8rem;
   }
 }
-/* src/styles/monthly.css */
+
 @import "./common-theme.css";
 
 .month-page { max-width: 980px; margin: 28px auto; padding: 20px; }

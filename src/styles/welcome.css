@@ -1,8 +1,4 @@
-/* ============================================================
-   SWASTHYTRACKER — WELCOME PAGE (Dark Neon Theme)
-   ============================================================ */
 
-/* Fullscreen background */
 .welcome-bg {
   min-height: 100vh;
   display: flex;
@@ -14,13 +10,13 @@
   padding: 20px;
 }
 
-/* Center wrapper */
+
 .welcome-wrapper {
   text-align: center;
   animation: fadeUp 1s ease-out forwards;
 }
 
-/* Logo Image */
+
 .welcome-logo {
   width: 180px;
   margin: 0 auto 18px auto;
@@ -28,7 +24,7 @@
   animation: glowPulse 2.5s infinite ease-in-out;
 }
 
-/* Welcome Card */
+
 .welcome-card {
   background: rgba(255, 255, 255, 0.03);
   padding: 40px 32px;
@@ -44,7 +40,7 @@
   animation: fadeUp 0.7s ease-out forwards;
 }
 
-/* Title */
+
 .welcome-title {
   font-size: 2.1rem;
   font-weight: 800;
@@ -53,7 +49,7 @@
   text-shadow: 0 0 12px rgba(0,255,210,0.35);
 }
 
-/* Description */
+
 .welcome-text {
   color: #c2d0d4;
   font-size: 1.1rem;
@@ -61,14 +57,14 @@
   line-height: 1.5;
 }
 
-/* Buttons Container */
+
 .welcome-buttons {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-/* Login Button */
+
 .btn-primary {
   display: block;
   text-align: center;
@@ -89,7 +85,7 @@
   box-shadow: 0 14px 32px rgba(0,255,210,0.35);
 }
 
-/* Create Account Button */
+
 .btn-ghost {
   display: block;
   text-align: center;
@@ -110,9 +106,7 @@
   transform: translateY(-4px);
 }
 
-/* =============================================
-   Animations
-   ============================================= */
+
 
 @keyframes fadeUp {
   0% { opacity: 0; transform: translateY(22px); }

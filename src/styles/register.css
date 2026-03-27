@@ -1,6 +1,4 @@
-/* ================================
-   REGISTER PAGE — register.css
-===================================*/
+
 
 .center-page {
   display: flex;
@@ -83,7 +81,7 @@
   text-decoration: underline;
 }
 
-/* Animation */
+
 @keyframes scaleIn {
   from { transform: scale(0.92); opacity: 0; }
   to { transform: scale(1); opacity: 1; }

@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/contact.css";
-import logo from "../assets/home-logo.png";   // ✅ Your logo
+import logo from "../assets/home-logo.png"; 
 
 export default function Contact() {
   return (
     <div className="page-card contact-page">
 
-      {/* 🔥 Logo + Heading Section */}
+      
       <div className="contact-header">
         <img src={logo} alt="logo" className="contact-logo" />
 
@@ -15,12 +15,12 @@ export default function Contact() {
         <h2 className="subheading">Contact Us</h2>
       </div>
 
-      {/* Back button */}
+      
       <Link to="/home" className="btn ghost back-btn">
         ← Back
       </Link>
 
-      {/* Contact Info */}
+      
       <div className="contact-box">
         <p>
           <strong>Email:</strong> swasthy2025tracker@gmail.com <br /><br />
@@ -35,7 +35,7 @@ export default function Contact() {
       <h2 className="subheading">Our Branches</h2>
       <h3 className="subheading small">Locations on Map</h3>
 
-      {/* Maps */}
+     
       <div className="contact-map-container">
         <iframe
           title="Map-1"

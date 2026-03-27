@@ -1,4 +1,3 @@
-// src/pages/MonthlyReport.jsx
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import Chart from "chart.js/auto";
@@ -28,7 +27,7 @@ export default function MonthlyReport() {
     if (!month) return;
     const ctx = canvasRef.current.getContext("2d");
 
-    // prepare data
+
     const labels = Object.keys(month.totalsByType || {});
     const data = labels.map(l => month.totalsByType[l]);
 

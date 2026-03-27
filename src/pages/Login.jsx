@@ -13,7 +13,7 @@ export default function Login() {
 
     const users = JSON.parse(localStorage.getItem("users") || "[]");
 
-    // Find matching user
+    
     const user = users.find(
       (u) => u.email === email && u.password === pass
     );
@@ -23,10 +23,10 @@ export default function Login() {
       return;
     }
 
-    // Store logged in user
+    
     localStorage.setItem("loggedUser", JSON.stringify(user));
 
-    // Redirect based on role
+    
     if (user.role === "Admin") {
       navigate("/adminhome");
     } else {

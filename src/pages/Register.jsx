@@ -12,7 +12,7 @@ export default function Register() {
     age: "",
     gender: "",
     password: "",
-    role: "", // NEW FIELD
+    role: "", 
   });
 
   const [error, setError] = useState("");
@@ -40,7 +40,7 @@ export default function Register() {
 
     let users = JSON.parse(localStorage.getItem("users") || "[]");
 
-    // Check if email already exists
+    
     if (users.some((u) => u.email === form.email)) {
       setError("Email already exists. Try logging in.");
       return;
@@ -105,7 +105,7 @@ export default function Register() {
             <option value="Other">Other</option>
           </select>
 
-          {/* NEW ROLE SELECT */}
+          
           <select
             name="role"
             className="input"

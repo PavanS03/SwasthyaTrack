@@ -12,7 +12,7 @@ export default function AdminDashboard() {
     setUsers(getUsers() || []);
   }, []);
 
-  // Merge User + Registration Data
+
   const mergedData = useMemo(() => {
     return registrations.map((reg) => {
       const user = users.find((u) => u.username === reg.username);
@@ -27,7 +27,7 @@ export default function AdminDashboard() {
     });
   }, [registrations, users]);
 
-  // Search filter
+  
   const filtered = mergedData.filter((item) => {
     const q = search.toLowerCase();
     return (
@@ -37,7 +37,8 @@ export default function AdminDashboard() {
     );
   });
 
-  // Export CSV
+  
+  
   function exportCSV() {
     if (!filtered.length) {
       alert("No data to export.");

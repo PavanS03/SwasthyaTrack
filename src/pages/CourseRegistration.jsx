@@ -23,7 +23,7 @@ export default function CourseRegistration() {
   const [selectedCourse, setSelectedCourse] = useState(null);
 
   useEffect(() => {
-    // Load selected course details from storage
+    
     if (courseId) {
       const c = getCourseById(courseId);
       setSelectedCourse(c);
@@ -52,7 +52,7 @@ export default function CourseRegistration() {
       return;
     }
 
-    // Save registration
+   
     const data = {
       ...form,
       courseId,
@@ -60,7 +60,7 @@ export default function CourseRegistration() {
     };
     saveCourseRegistration(data);
 
-    // Navigate to pricing page
+    
     const totalAmount = selectedCourse ? Number(selectedCourse.price) : 0;
     navigate(`/courseprice?total=${totalAmount}`);
   }

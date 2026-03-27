@@ -1,4 +1,3 @@
-// src/pages/WeeklyReport.jsx
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { readJSON, writeJSON, pushToKey, generateId, formatDateTime } from "../utils/reports";
@@ -7,7 +6,7 @@ import "../styles/weeklyreport.css";
 export default function WeeklyReport() {
   const navigate = useNavigate();
 
-  // default static plan (you can keep your original data)
+  
   const workoutData = [
     { day: "Monday", type: "Full Body Strength", details: "Squats, push-ups, planks (3x12)", calories: 300 },
     { day: "Tuesday", type: "Moderate Cardio", details: "30–40 min cycling / brisk walk", calories: 250 },
@@ -38,7 +37,7 @@ export default function WeeklyReport() {
     }
     const finalList = Array.from(selected).map((i) => workoutData[i]);
 
-    // create week entry
+   
     const weekEntry = {
       id: generateId("w-"),
       createdAt: Date.now(),
@@ -61,10 +60,10 @@ export default function WeeklyReport() {
       return;
     }
 
-    // Use the last 4 weeks (most recent) to create the month
+    
     const last4 = stored.slice(-4);
 
-    // compute totals and breakdown by workout type
+    
     const typeTotals = {};
     let monthTotal = 0;
     last4.forEach((week) => {
@@ -83,12 +82,11 @@ export default function WeeklyReport() {
       title: `Month report — ${formatDateTime()}`
     };
 
-    // push to monthReports and remove those weeks from weekReports
     const months = readJSON("monthReports");
     months.push(monthEntry);
     writeJSON("monthReports", months);
 
-    // remove last 4 from weekReports
+    
     const remainingWeeks = stored.slice(0, Math.max(0, stored.length - 4));
     writeJSON("weekReports", remainingWeeks);
     setWeekReports(remainingWeeks);

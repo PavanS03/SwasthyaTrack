@@ -4,9 +4,9 @@ import "../styles/courseprice.css";
 
 export default function CoursePrice() {
   const [params] = useSearchParams();
-  const total = Number(params.get("total")) || null;   // FIXED ✔ always numeric
+  const total = Number(params.get("total")) || null;  
 
-  // UPI Configuration
+  
   const upiId = "pavan123@upi"; 
   const upiName = "Pavan";
 
@@ -23,7 +23,7 @@ export default function CoursePrice() {
       <div className="payment-box">
         <h2>SwasthyaTrack</h2>
 
-        {/* Show Amount ONLY if valid price */}
+        
         {total ? (
           <div className="payment-amount">
             Amount: <span>₹{total}</span>

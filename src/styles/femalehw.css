@@ -1,7 +1,3 @@
-/* ============================================================
-   FEMALE HEIGHT / WEIGHT PAGE — femalehw.css
-   Dark Theme + Glassmorphism + Neon UI
-=============================================================== */
 
 .hw-page {
   max-width: 600px;
@@ -18,7 +14,6 @@
   text-align: center;
 }
 
-/* Titles */
 .hw-title {
   font-size: 2rem;
   font-weight: 900;
@@ -35,7 +30,7 @@
   margin-bottom: 25px;
 }
 
-/* Form */
+
 .hw-form {
   background: rgba(255,255,255,0.03);
   padding: 22px;
@@ -48,7 +43,7 @@
   gap: 16px;
 }
 
-/* Dropdown Styling */
+
 .hw-form select {
   width: 100%;
   padding: 12px;
@@ -62,21 +57,21 @@
   appearance: none;
 }
 
-/* Dropdown items visible */
+
 .hw-form select option {
   background: #0f1418;
   color: #e6eef2;
   padding: 10px;
 }
 
-/* Focus */
+
 .hw-form select:focus {
   border-color: #22c1a9;
   box-shadow: 0 8px 22px rgba(34,193,169,0.25);
   transform: translateY(-2px);
 }
 
-/* Calculate Button */
+
 .hw-submit-btn {
   padding: 14px 18px;
   border-radius: 12px;
@@ -94,7 +89,7 @@
   box-shadow: 0 18px 36px rgba(0,255,200,0.40);
 }
 
-/* Result Box */
+
 .hw-result {
   margin-top: 18px;
   padding: 16px;
@@ -112,7 +107,7 @@
   margin-bottom: 8px;
 }
 
-/* Back button */
+
 .hw-back-btn {
   margin-top: 22px;
   padding: 12px 18px;
@@ -133,13 +128,11 @@
   box-shadow: 0 12px 28px rgba(0,255,200,0.25);
 }
 
-/* Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .hw-page {
     padding: 20px;

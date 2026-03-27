@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/welcome.css";
 
-// Import image correctly
+
 import welcomeImg from "../assets/welcome.png";
 
 export default function Welcome() {
@@ -10,14 +10,14 @@ export default function Welcome() {
     <div className="welcome-bg">
       <div className="welcome-wrapper">
         
-        {/* Logo */}
+        
         <img
           src={welcomeImg}
           alt="SwasthyaTracker Logo"
           className="welcome-logo"
         />
 
-        {/* Card */}
+        
         <div className="welcome-card">
           <h1 className="welcome-title">Welcome to SwasthyaTracker</h1>
 

@@ -8,7 +8,7 @@ export default function Course() {
   const navigate = useNavigate();
   const [courses, setCourses] = useState([]);
 
-  // Static default courses
+  
   const staticCourses = [
     {
       id: "C101",
@@ -42,13 +42,13 @@ export default function Course() {
     },
   ];
 
-  // Load dynamic + static courses
+  
   useEffect(() => {
     const stored = getCourses();
     const staticIds = new Set(staticCourses.map((c) => c.id));
     const merged = [...staticCourses];
 
-    // Only add admin-added courses
+   
     stored.forEach((c) => {
       if (!staticIds.has(c.id)) merged.push(c);
     });

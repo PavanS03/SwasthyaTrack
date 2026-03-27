@@ -12,7 +12,7 @@ export default function AdminUser() {
     setUsers(allUsers);
   }, []);
 
-  // Filter + Sort
+  
   const filtered = useMemo(() => {
     const q = filter.trim().toLowerCase();
     let list = [...users];
@@ -34,7 +34,7 @@ export default function AdminUser() {
     return list;
   }, [users, filter, sortAsc]);
 
-  // Delete user
+  
   function handleDelete(username) {
     if (!window.confirm(`Delete user "${username}"?`)) return;
 
@@ -43,7 +43,7 @@ export default function AdminUser() {
     setUsers(updated);
   }
 
-  // Export as CSV
+  
   function exportCSV() {
     if (!users.length) {
       alert("No users to export.");
@@ -76,7 +76,7 @@ export default function AdminUser() {
 
   return (
     <div className="admin-users-page page-card">
-      {/* Header */}
+    
       <div className="admin-users-header">
         <h1 className="page-heading">Registered Users</h1>
 
@@ -96,7 +96,7 @@ export default function AdminUser() {
         </div>
       </div>
 
-      {/* Search */}
+      
       <div className="admin-users-controls">
         <input
           type="search"
@@ -111,7 +111,7 @@ export default function AdminUser() {
         </div>
       </div>
 
-      {/* Table */}
+      
       <div className="table-wrap">
         {filtered.length === 0 ? (
           <div className="empty">No users found.</div>

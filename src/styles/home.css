@@ -1,9 +1,4 @@
-/* ===========================================
-   HOME PAGE — home.css
-   Dark Theme + Glassmorphism + Neon Glow
-=========================================== */
 
-/* Page layout */
 .home-page {
   max-width: 1200px;
   margin: auto;
@@ -14,7 +9,7 @@
   animation: fadeIn 0.6s ease-out;
 }
 
-/* Header Section */
+
 .home-header {
   text-align: center;
   margin-bottom: 40px;
@@ -27,7 +22,7 @@
   animation: floatUp 0.55s ease-out;
 }
 
-/* Header left (Logo + Title) */
+
 .header-left {
   display: flex;
   justify-content: center;
@@ -35,7 +30,7 @@
   gap: 14px;
 }
 
-/* Neon Logo */
+
 .home-logo {
   width: 62px;
   height: 62px;
@@ -44,7 +39,7 @@
   animation: logoFloat 3s ease-in-out infinite;
 }
 
-/* Brand Title */
+
 .brand-title {
   font-size: 2.4rem;
   font-weight: 900;
@@ -54,7 +49,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Brand Subtitle */
+
 .brand-subtitle {
   margin-top: 10px;
   color: #9aa6ad;
@@ -62,14 +57,14 @@
   letter-spacing: 0.5px;
 }
 
-/* Dashboard grid */
+
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
 }
 
-/* Cards */
+
 .dash-card {
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.05);
@@ -97,14 +92,14 @@
   font-size: 0.95rem;
 }
 
-/* Hover Effect */
+
 .dash-card:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 14px 36px rgba(0,0,0,0.6);
   border-color: rgba(34,193,169,0.45);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(14px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -120,14 +115,14 @@
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Logo floating animation */
+
 @keyframes logoFloat {
   0% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
   100% { transform: translateY(0); }
 }
 
-/* Responsive */
+
 @media (max-width: 700px) {
   .brand-title {
     font-size: 1.8rem;
@@ -140,7 +135,7 @@
     height: 50px;
   }
 }
-/* Logout Button */
+
 .logout-container {
   text-align: center;
   margin-top: 35px;

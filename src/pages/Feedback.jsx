@@ -34,7 +34,7 @@ export default function Feedback() {
   return (
     <div className="feedback-page">
 
-      {/* Header Section */}
+      
       <div className="feedback-header">
         <img src={logo} alt="logo" className="feedback-logo" />
 
@@ -42,7 +42,7 @@ export default function Feedback() {
         <p className="feedback-subtitle">Help us improve SwasthyTracker</p>
       </div>
 
-      {/* ⭐ Star Rating */}
+      
       <div className="star-rating">
         {[1, 2, 3, 4, 5].map((star) => (
           <span
@@ -57,7 +57,6 @@ export default function Feedback() {
         ))}
       </div>
 
-      {/* Textarea */}
       <textarea
         className="feedback-box"
         placeholder="Share your experience..."
@@ -65,7 +64,6 @@ export default function Feedback() {
         onChange={(e) => setFeedback(e.target.value)}
       ></textarea>
 
-      {/* Buttons */}
       <div className="feedback-actions">
         <button className="btn primary submit-btn" onClick={handleSubmit}>
           Submit Feedback

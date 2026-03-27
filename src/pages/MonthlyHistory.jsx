@@ -1,4 +1,3 @@
-// src/pages/MonthlyHistory.jsx
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { readJSON, writeJSON } from "../utils/reports";
@@ -38,7 +37,7 @@ export default function MonthlyHistory() {
           <div className="month-card" key={m.id}>
             <div className="month-card-left">
               <div className="month-title">{new Date(m.createdAt).toLocaleString()}</div>
-              <div className="month-total">Total: <span>₹{/* if price isn't applicable, show calories */}</span> {m.totalCalories} cal</div>
+              <div className="month-total">Total: <span>₹</span> {m.totalCalories} cal</div>
             </div>
 
             <div className="month-card-actions">

@@ -15,9 +15,9 @@ export default function MaleHW() {
       return;
     }
 
-    // Convert feet + inches → meters
+    
     const totalInches = Number(feet) * 12 + Number(inch);
-    const heightMeters = totalInches * 0.0254; // inches → meters
+    const heightMeters = totalInches * 0.0254; 
     const w = Number(weight);
 
     const bmiValue = (w / (heightMeters * heightMeters)).toFixed(1);
@@ -49,7 +49,7 @@ export default function MaleHW() {
 
       <div className="hw-form">
 
-        {/* Height Feet */}
+        
         <select value={feet} onChange={(e) => setFeet(e.target.value)}>
           <option value="">Select Height (Feet)</option>
           {[4, 5, 6, 7].map((f) => (
@@ -57,7 +57,7 @@ export default function MaleHW() {
           ))}
         </select>
 
-        {/* Height Inches */}
+        
         <select value={inch} onChange={(e) => setInch(e.target.value)}>
           <option value="">Select Height (Inches)</option>
           {[0,1,2,3,4,5,6,7,8,9,10,11].map((i) => (
@@ -65,7 +65,7 @@ export default function MaleHW() {
           ))}
         </select>
 
-        {/* Weight */}
+
         <select value={weight} onChange={(e) => setWeight(e.target.value)}>
           <option value="">Select Weight (kg)</option>
           {[40,45,50,55,60,65,70,75,80,85,90,100].map((w) => (
@@ -73,7 +73,7 @@ export default function MaleHW() {
           ))}
         </select>
 
-        {/* Calculate BMI */}
+       
         <button className="hw-submit-btn" onClick={calculateBMI}>
           Calculate BMI
         </button>

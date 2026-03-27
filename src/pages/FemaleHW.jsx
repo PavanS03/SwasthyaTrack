@@ -16,7 +16,7 @@ export default function FemaleHW() {
     }
 
     const totalInches = Number(feet) * 12 + Number(inches);
-    const heightMeters = totalInches * 0.0254; // inch → meter
+    const heightMeters = totalInches * 0.0254; 
     const weightKg = Number(weight);
 
     const bmiValue = (weightKg / (heightMeters * heightMeters)).toFixed(1);

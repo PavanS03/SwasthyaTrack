@@ -1,23 +1,23 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/home.css";
-import logo from "../assets/home-logo.png"; // Make sure this exists
+import logo from "../assets/home-logo.png"; 
 
 export default function Home() {
   const navigate = useNavigate();
 
   function handleLogout() {
-    // Clear logged user
+    
     localStorage.removeItem("loggedUser");
 
-    // Navigate to Feedback Page
+    
     navigate("/feedback");
   }
 
   return (
     <div className="home-page">
 
-      {/* Header */}
+     
       <header className="home-header">
 
         <div className="header-left">
@@ -30,7 +30,7 @@ export default function Home() {
         </p>
       </header>
 
-      {/* Dashboard Grid */}
+      
       <div className="dashboard-grid">
         <Link to="/course" className="dash-card">
           <h2>🏋 Courses</h2>
@@ -63,7 +63,7 @@ export default function Home() {
         </Link>
       </div>
 
-      {/* Logout Button */}
+    
       <div className="logout-container">
         <button className="btn ghost logout-btn" onClick={handleLogout}>
           Logout

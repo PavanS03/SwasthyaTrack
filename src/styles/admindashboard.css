@@ -1,6 +1,3 @@
-/* ===========================================================
-   ADMIN DASHBOARD — DARK NEON THEME
-=========================================================== */
 
 .admin-dashboard {
   max-width: 1150px;
@@ -38,7 +35,6 @@
   margin-bottom: 20px;
 }
 
-/* Table Styling */
 .table-wrap {
   overflow-x: auto;
 }
@@ -64,7 +60,7 @@
   color: #e4ecef;
 }
 
-/* Empty State */
+
 .empty {
   padding: 25px;
   text-align: center;
@@ -72,7 +68,7 @@
   color: #9aa6ad;
 }
 
-/* Button Styling */
+
 .btn {
   padding: 10px 16px;
   border-radius: 10px;
@@ -97,7 +93,7 @@
   transform: translateY(-3px);
 }
 
-/* Fade Animation */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }

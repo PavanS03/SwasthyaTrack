@@ -1,9 +1,4 @@
-/* ============================================================
-   PAYMENT PAGE — courseprice.css
-   Dark Theme + Glassmorphism + Neon Glow + Premium UI
-===============================================================*/
 
-/* Page wrapper */
 .payment-page {
   max-width: 700px;
   margin: 40px auto;
@@ -24,7 +19,8 @@
   animation: fadeIn 0.6s ease-out;
 }
 
-/* Heading */
+
+
 .page-heading {
   text-align: center;
   font-size: 2.2rem;
@@ -36,7 +32,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Payment Box */
+
 .payment-box {
   background: rgba(255,255,255,0.03);
   padding: 28px;
@@ -57,7 +53,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Amount Section */
+
 .payment-amount {
   margin: 18px 0 22px;
   font-size: 1.2rem;
@@ -71,7 +67,7 @@
   font-size: 1.4rem;
 }
 
-/* QR Code */
+
 .qr-img {
   width: 260px;
   height: 260px;
@@ -83,7 +79,7 @@
   background: #fff;
 }
 
-/* Payment note */
+
 .payment-note {
   margin-top: 10px;
   color: #9aa6ad;
@@ -91,13 +87,12 @@
   letter-spacing: 0.3px;
 }
 
-/* Actions */
+
 .payment-actions {
   margin-top: 22px;
   text-align: center;
 }
 
-/* Back Button */
 .btn.ghost {
   padding: 12px 18px;
   border-radius: 12px;
@@ -116,13 +111,11 @@
   box-shadow: 0 12px 28px rgba(0,255,200,0.25);
 }
 
-/* Animations */
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(18px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
 @media (max-width: 680px) {
   .payment-page {
     padding: 18px;

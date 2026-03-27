@@ -7,7 +7,7 @@ export default function AdminHome() {
   return (
     <div className="admin-home page-card">
 
-      {/* Header */}
+      
       <div className="admin-header">
         <div className="admin-title">
           <h1>Swasthya Tracker — Admin Panel</h1>
@@ -19,12 +19,11 @@ export default function AdminHome() {
         </div>
       </div>
 
-      {/* Greeting */}
+      
       <div className="admin-welcome">
         <span>Welcome, Admin 👋</span>
       </div>
 
-      {/* Navigation Grid */}
       <div className="admin-grid">
         <Link to="/adminaddcourse" className="admin-card">
           <h2>📘 Courses</h2>
